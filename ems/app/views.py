@@ -19,4 +19,4 @@ def login_view(request):
             else:
                 return redirect('employee_dashboard')
 
-    return render(request, 'login.html'
+    return render(request, 'login.html')
