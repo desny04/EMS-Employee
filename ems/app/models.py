@@ -5,9 +5,9 @@ class Employee(models.Model):
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
-    phone = models.CharField(max_length=15)
-    department = models.CharField(max_length=100)
-    designation = models.CharField(max_length=100)
+    phone = models.IntegerField()
+    department = models.TextField()
+    designation = models.TextField()
 
     def __str__(self):
         return self.user.username
@@ -21,7 +21,7 @@ class Work(models.Model):
         ('Done', 'Done'),
     ]
 
-    title = models.CharField(max_length=200)
+    title = models.TextField()
     description = models.TextField()
     assigned_date = models.DateField()
     deadline = models.DateField()
