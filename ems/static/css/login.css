@@ -2,8 +2,14 @@
     margin: 0;
     padding: 0;
     background-color: rgb(71, 88, 199);
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
 }
 
-form{
-    background-color: aquamarine;
+.form{
+    
+    background-color: white;
 }
+
