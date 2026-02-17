@@ -8,21 +8,33 @@
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
 </head>
 <body>
-    <div class="form">
-        <form method="POST">
-            {% csrf_token %}
-            <div class="username">
-                <input type="text" name="username" placeholder="Username">
-            </div>
-            
-            <div class="pwd">
-                <input type="password" name="password" placeholder="Password">
-            </div>
+    <div class="container">
+        <div class="main_head">
+            <p>EMPLOYEE MANAGEMENT SYSTEM</p>
+        </div>
 
-            <div class="submit">
-                <button type="submit">Login</button>
+        <div class="form">
+            <form method="POST">
+                {% csrf_token %}
+
+                <div class="login_head">
+                    <p>LOGIN</p>
+                </div>
+
+                <div class="email">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                
+                <div class="pwd">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Login">
             </div>
-        </form>
+            </form>
+        </div>
     </div>
+    
 </body>
 </html>
