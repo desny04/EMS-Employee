@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Update Work Status</h2>
+
+    <p><strong>Title:</strong> {{ work.title }}</p>
+    <p><strong>Description:</strong> {{ work.description }}</p>
+    <p><strong>Current Status:</strong> {{ work.status }}</p>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>New Status:</label><br>
+        <select name="status">
+            <option value="To Do">To Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="On Testing">On Testing</option>
+            <option value="Done">Done</option>
+        </select><br><br>
+
+        <button type="submit">Update Status</button>
+    </form>
+
+    <br>
+    <a href="{% url 'my_works' %}">Back to My Works</a>
+</body>
+</html>
