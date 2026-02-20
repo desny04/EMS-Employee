@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My Assigned Works</h2>
+
+    <table border="1">
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Assigned Date</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+        {% for work in works %}
+        <tr>
+            <td>{{ work.title }}</td>
+            <td>{{ work.description }}</td>
+            <td>{{ work.assigned_date }}</td>
+            <td>{{ work.deadline }}</td>
+            <td>{{ work.status }}</td>
+            <td>
+                <a href="{% url 'update_status' work.id %}">Update Status</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="{% url 'employee_dashboard' %}">Back to Dashboard</a>
+</body>
+</html>
