@@ -8,10 +8,79 @@
     <link rel="stylesheet" href="{% static 'css/admin_dashboard.css' %}">
 </head>
 <body>
-    <h2>Admin Dashboard</h2>
+    <div class="main_head">
+        <h2>Admin Dashboard</h2>
+    </div>
 
-    <p>Welcome, {{ request.user.username }}</p>
+    <div class="welcome">
+        <p>Welcome, {{ request.user.username }}!</p>
+    </div>
 
+    <div class="main_cards">
+        <div class="card">
+
+            <div class="logo">
+                <img src="{% static 'images/addemployee.png' %}" alt="" width="40px">
+            </div>
+
+            <div class="sub_head">
+                <p>Add Employee</p>
+            </div>
+
+            <div class="goto">
+                <button><a href="">Go to </a></button>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="logo">
+                <img src="{% static 'images/employeelist.png' %}" alt="" width="40px">
+            </div>
+
+            <div class="sub_head">
+                <p>Employee List</p>
+            </div>
+
+            <div class="goto">
+                <button><a href="">Go to </a></button>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="logo">
+                <img src="{% static 'images/viewworks.png' %}" alt="" width="40px">
+            </div>
+
+            <div class="sub_head">
+                <p>Assign Work</p>
+            </div>
+
+            <div class="goto">
+                <button><a href="">Go to </a></button>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="logo">
+                <img src="{% static 'images/assignwork.png' %}" alt="" width="40px">
+            </div>
+
+            <div class="sub_head">
+                <p>View Works</p>
+            </div>
+
+            <div class="goto">
+                <button><a href="">Go to </a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="logout">
+        <button><a href="">Logout</a></button>
+    </div>
     
 </body>
 </html>

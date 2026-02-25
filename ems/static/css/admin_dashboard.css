@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+.main_head{
+    height: 40px;
+    background-color: rgb(41, 119, 184);
+}
+
+.main_head h2{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.welcome{
+    padding-top: 30px;
+    text-align: center;
+    font-size:xx-large;
+    font-weight: 600;
+}
+
+.main_cards{
+    padding-top: 30px;
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+}
