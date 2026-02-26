@@ -49,7 +49,7 @@ body{
 }
 
 .main_cards{
-    padding-top: 70px;
+    padding-top: 80px;
     display: flex;
     justify-content:center;
     gap: 30px;

@@ -13,29 +13,46 @@
         <h2>Add Employee</h2>
     </div>
 
-    <form method="POST">
-        {% csrf_token %}
+    <div class="form">
 
-        <label>Username:</label><br>
-        <input type="text" name="username"><br><br>
+        <form method="POST">
+            {% csrf_token %}
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+            <div class="username">
+                <label>Username:</label>
+                <input type="text" name="username">
+            </div>
 
-        <label>Password:</label><br>
-        <input type="password" name="password"><br><br>
+            <div class="email">
+                <label>Email:</label>
+                <input type="email" name="email">
+            </div>
 
-        <label>Phone:</label><br>
-        <input type="text" name="phone"><br><br>
+            <div class="pwd">
+                <label>Password:</label>
+                <input type="password" name="password">
+            </div>
 
-        <label>Department:</label><br>
-        <input type="text" name="department"><br><br>
+            <div class="phone">
+                <label>Phone:</label>
+                <input type="text" name="phone">
+            </div>
 
-        <label>Designation:</label><br>
-        <input type="text" name="designation"><br><br>
+            <div class="department">
+                <label>Department:</label>
+                <input type="text" name="department">
+            </div>
 
-        <button type="submit">Create Employee</button>
-    </form>
+            <div class="designation">
+                <label>Designation:</label>
+                <input type="text" name="designation">
+            </div>
+            
+            <button type="submit">Create Employee</button>
+            
+        </form>
+
+    </div>
 
     <br>
     <a href="{% url 'admin_dashboard' %}">Back to Dashboard</a>
