@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main_head{
+    height: 40px;
+    background-color: rgb(41, 119, 184);
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_head h2{
+    padding-top: 10px;
+    padding-left: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
