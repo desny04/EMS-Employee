@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="{% static 'css/admin_dashboard.css' %}">
 </head>
 <body>
-    <div class="main_head">
-        <h2>Admin Dashboard</h2>
+
+    <div class="nav">
+        <div class="main_head">
+            <h2>Admin Dashboard</h2>
+        </div>
+
+        <div class="logout">
+            <a href="{% url 'logout' %}"><button>Logout</button></a>
+        </div>
     </div>
 
     <div class="welcome">
@@ -20,7 +27,7 @@
         <div class="card">
 
             <div class="logo">
-                <img src="{% static 'images/addemployee.png' %}" alt="" width="40px">
+                <img src="{% static 'images/addemployee.png' %}" alt="" width="70px">
             </div>
 
             <div class="sub_head">
@@ -28,14 +35,14 @@
             </div>
 
             <div class="goto">
-                <button><a href="">Go to </a></button>
+                <a href="{% url 'add_employee' %}"><button>Go to</button></a>
             </div>
         </div>
 
         <div class="card">
 
             <div class="logo">
-                <img src="{% static 'images/employeelist.png' %}" alt="" width="40px">
+                <img src="{% static 'images/employeelist.png' %}" alt="" width="70px">
             </div>
 
             <div class="sub_head">
@@ -43,14 +50,29 @@
             </div>
 
             <div class="goto">
-                <button><a href="">Go to </a></button>
+                <a href=""><button>Go to</button></a>
             </div>
         </div>
 
         <div class="card">
 
             <div class="logo">
-                <img src="{% static 'images/viewworks.png' %}" alt="" width="40px">
+                <img src="{% static 'images/creatework.png' %}" alt="" width="70px">
+            </div>
+
+            <div class="sub_head">
+                <p>Create work</p>
+            </div>
+
+            <div class="goto">
+                <a href=""><button>Go to</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="logo">
+                <img src="{% static 'images/assignwork.png' %}" alt="" width="70px">
             </div>
 
             <div class="sub_head">
@@ -58,14 +80,14 @@
             </div>
 
             <div class="goto">
-                <button><a href="">Go to </a></button>
+                <a href=""><button>Go to</button></a>
             </div>
         </div>
 
         <div class="card">
 
             <div class="logo">
-                <img src="{% static 'images/assignwork.png' %}" alt="" width="40px">
+                <img src="{% static 'images/viewwork.png' %}" alt="" width="70px">
             </div>
 
             <div class="sub_head">
@@ -73,14 +95,10 @@
             </div>
 
             <div class="goto">
-                <button><a href="">Go to </a></button>
+                <a href=""><button>Go to</button></a>
             </div>
         </div>
     </div>
 
-    <div class="logout">
-        <button><a href="">Logout</a></button>
-    </div>
-    
 </body>
 </html>

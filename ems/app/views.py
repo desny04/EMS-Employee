@@ -32,3 +32,30 @@ def admin_dashboard(request):
         return redirect('employee_dashboard')
     return render(request, 'admin/dashboard.html')
 
+@login_required
+def add_employee(request):
+    if request.method == "POST":
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        phone = request.POST.get('phone')
+        department = request.POST.get('department')
+        designation = request.POST.get('designation')
+
+        user = User.objects.create_user(
+            username=username,
+            email=email,
+            password=password
+        )
+
+        Employee.objects.create(
+            user=user,
+            phone=phone,
+            department=department,
+            designation=designation
+        )
+
+        return redirect('employee_list')
+
+    return render(request, 'admin/add_employee.html')
+
