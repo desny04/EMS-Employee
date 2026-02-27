@@ -19,36 +19,38 @@
             {% csrf_token %}
 
             <div class="username">
-                <label>Username:</label>
+                <label>Username:</label><br>
                 <input type="text" name="username">
             </div>
 
             <div class="email">
-                <label>Email:</label>
+                <label>Email:</label><br>
                 <input type="email" name="email">
             </div>
 
             <div class="pwd">
-                <label>Password:</label>
+                <label>Password:</label><br>
                 <input type="password" name="password">
             </div>
 
             <div class="phone">
-                <label>Phone:</label>
+                <label>Phone:</label><br>
                 <input type="text" name="phone">
             </div>
 
             <div class="department">
-                <label>Department:</label>
+                <label>Department:</label><br>
                 <input type="text" name="department">
             </div>
 
             <div class="designation">
-                <label>Designation:</label>
+                <label>Designation:</label><br>
                 <input type="text" name="designation">
             </div>
-            
-            <button type="submit">Create Employee</button>
+
+            <div class="submit">
+                <button type="submit">Create Employee</button>
+            </div>
             
         </form>
 

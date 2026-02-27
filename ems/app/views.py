@@ -59,3 +59,8 @@ def add_employee(request):
 
     return render(request, 'admin/add_employee.html')
 
+@login_required
+def employee_list(request):
+    employees = Employee.objects.all()
+    return render(request, 'admin/employee_list.html', {'employees': employees})
+
