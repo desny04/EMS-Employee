@@ -64,3 +64,7 @@ def employee_list(request):
     employees = Employee.objects.all()
     return render(request, 'admin/employee_list.html', {'employees': employees})
 
+@login_required
+def employee_dashboard(request):
+    return render(request, 'employee/dashboard.html')
+
