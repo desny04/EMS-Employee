@@ -11,7 +11,7 @@ body{
     background-color: rgb(249, 250, 252);
 }
 
-.main_head{
+.nav{
     height: 35px;
     background-color: rgb(41, 119, 184);
     display: flex;
