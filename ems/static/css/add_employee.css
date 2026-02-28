@@ -26,6 +26,22 @@ body{
     font-weight: 500;
 }
 
+.backto{
+    padding-right: 60px;
+    padding-top: 5px;
+}
+
+.backto button{
+    width: 150px;
+    height: 25px;
+    border: none;
+    outline: none;
+    color:rgb(41, 119, 184) ;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+
 .form{
     display: flex;
     justify-content: center;
