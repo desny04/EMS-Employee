@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/employee_list.css' %}">
 </head>
 <body>
-    <h2>Employee List</h2>
+    <div class="nav">
+        <div class="main_head">
+            <h2>Employee List</h2>
+        </div>
+
+        <div class="backto">
+            <a href="{% url 'admin_dashboard' %}"><button>Back to Dashboard</button></a>
+        </div>
+    </div>
 
     <table border="1">
         <tr>
@@ -33,8 +43,6 @@
         {% endfor %}
 
     </table>
-
-    <br>
-    <a href="{% url 'admin_dashboard' %}">Back to Dashboard</a>
+    
 </body>
 </html>

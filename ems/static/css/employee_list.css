@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(249, 250, 252);
+}
+
+.nav{
+    height: 35px;
+    background-color: rgb(41, 119, 184);
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_head h2{
+    padding-top: 5px;
+    padding-left: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.backto{
+    padding-right: 60px;
+    padding-top: 5px;
+}
+
+.backto button{
+    width: 150px;
+    height: 25px;
+    border: none;
+    outline: none;
+    color:rgb(41, 119, 184) ;
+    font-weight: 500;
+    border-radius: 3px;
+}
