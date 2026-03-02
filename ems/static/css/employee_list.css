@@ -40,3 +40,36 @@ body{
     font-weight: 500;
     border-radius: 3px;
 }
+
+table{
+    padding: 30px;
+    width: 96%;
+}
+
+th{
+    border: 1px solid rgb(223, 223, 223);
+    background-color:rgb(228, 228, 228) ;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+td{
+    border: 1px solid rgb(227, 227, 227);
+    background-color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.edit button{
+    background-color:rgb(41, 119, 184) ;
+    border: none;
+    outline: none;
+}
+
+.delete button{
+    background-color: red;
+    border: none;
+    outline: none;
+}
+
+

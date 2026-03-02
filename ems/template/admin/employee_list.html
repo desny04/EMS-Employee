@@ -18,15 +18,17 @@
         </div>
     </div>
 
-    <table border="1">
-        <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Department</th>
-            <th>Designation</th>
-            <th>Actions</th>
-        </tr>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Department</th>
+                <th>Designation</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
 
         {% for employee in employees %}
         <tr>
@@ -36,8 +38,8 @@
             <td>{{ employee.department }}</td>
             <td>{{ employee.designation }}</td>
             <td>
-                <a href="">Edit</a>
-                <a href="">Delete</a>
+                <span class="edit"><a href=""><button>Edit</button></a></span>
+                <span class="delete"><a href=""><button>Delete</button></a></span>
             </td>
         </tr>
         {% endfor %}
