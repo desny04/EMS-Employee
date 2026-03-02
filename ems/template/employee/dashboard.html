@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/employee_dashboard.css' %}">
 </head>
 <body>
-    <h2>Employee Dashboard</h2>
 
-    <p>Welcome, {{ request.user.username }}</p>
+    <div class="nav">
+        <div class="main_head">
+            <h2>Employee Dashboard</h2>
+        </div>
 
-    <ul>
-        <li><a href="">My Profile</a></li>
-        <li><a href="">My Works</a></li>
-        <li><a href="">Logout</a></li>
-    </ul>
+        <div class="logout">
+            <a href="{% url 'logout' %}"><button>Logout</button></a>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <p>Welcome, {{ request.user.username }}!</p>
+    </div>
+
+    <div class="main_cards">
+        <div class="card">
+
+            <div class="logo">
+                <img src="{% static 'images/addemployee.png' %}" alt="" width="70px">
+            </div>
+
+            <div class="sub_head">
+                <p>My Profile</p>
+            </div>
+
+            <div class="goto">
+                <a href=""><button>Go to</button></a>
+            </div>
+        </div>
+
+        
+
+        <div class="card">
+
+            <div class="logo">
+                <img src="{% static 'images/creatework.png' %}" alt="" width="70px">
+            </div>
+
+            <div class="sub_head">
+                <p>My Works</p>
+            </div>
+
+            <div class="goto">
+                <a href=""><button>Go to</button></a>
+            </div>
+        </div>
+
 </body>
 </html>
